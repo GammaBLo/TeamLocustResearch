@@ -1,0 +1,34 @@
+import hmac
+import time
+import hashlib
+import pyotp
+
+# Create a TOTP instance using a shared secret key
+totp = pyotp.TOTP('mysecretkey')
+
+# Get the user's username and password
+username = input('Enter your username: ')
+password = input('Enter your password: ')
+
+# Generate a random challenge string
+challenge = 'randomstring'
+
+# Send the challenge to the user's device
+send_challenge_to_device(username, challenge)
+
+# Wait for the response from the user's device
+response = receive_response_from_device(username)
+
+# Combine the challenge with the TOTP code to create a response string
+response_string = challenge + totp.now()
+    
+# Authenticate the user
+if hmac.compare_digest(response_string, response):
+    print('Authentication successful')
+else:
+    print('Authentication failed')
+
+
+
+
+In this example, we're using the pyotp library to generate TOTP codes based on a shared secret key. The send_challenge_to_device and receive_response_from_device functions are placeholders for the actual code that sends and receives data to and from the user's device. The hmac.compare_digest function is used to securely compare the response string with the response received from the user's device.

@@ -1,0 +1,45 @@
+import hashlib
+import hmac
+import secrets
+
+# First Algorithm - Authentication
+
+# Define a shared secret key between the user and the server
+shared_key = "my_shared_secret_key".encode()
+
+# Generate a random nonce
+nonce = secrets.token_bytes(16)
+
+# Generate a random secret number for the user
+user_secret = secrets.randbits(256)
+
+# Compute the user's public key using the shared key and the secret number
+user_public = hmac.new(shared_key, user_secret.to_bytes(32, 'big'), hashlib.sha256).digest()
+
+# Send the user's public key and nonce to the server for authentication
+server_authenticate(user_public, nonce)
+
+# Verify the server's response using the shared key and the nonce
+server_response = server_authenticate_response()
+if not hmac.compare_digest(server_response, hmac.new(shared_key, nonce, hashlib.sha256).digest()):
+    raise Exception("Authentication failed")
+
+# Generate a new secret key for encryption
+encryption_key = secrets.token_bytes(32)
+
+# Second Algorithm - Encryption
+
+# Encrypt a message using the encryption key
+message = "Hello, World!".encode()
+iv = secrets.token_bytes(16)
+cipher = AES.new(encryption_key, AES.MODE_CBC, iv)
+ciphertext = cipher.encrypt(message)
+
+# Send the encrypted message and the IV to the server
+server_receive_encrypted_message(ciphertext, iv)
+
+# Decrypt the message using the encryption key
+server_encrypted_message = server_receive_encrypted_message_response()
+cipher = AES.new(encryption_key, AES.MODE_CBC, server_encrypted_message["iv"])
+plaintext = cipher.decrypt(server_encrypted_message["ciphertext"])
+print(plaintext.decode())

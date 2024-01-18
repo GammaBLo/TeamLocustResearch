@@ -1,0 +1,120 @@
+import random
+import hashlib
+
+# Returns a new private key
+def generate_private_key():
+    return random.randint(1, 65535)
+
+# Returns the public key corresponding to the given private key
+def generate_public_key(private_key):
+    # Perform a hash of the private key and convert the result to an integer
+    hashed_key = int(hashlib.sha256(str(private_key).encode('utf-8')).hexdigest(), 16)
+    
+    # Use the hashed key as the public key
+    return hashed_key
+
+# Generates a new keypair and adds it to the trust network
+def generate_keypair(trust_network):
+    private_key = generate_private_key()
+    public_key = generate_public_key(private_key)
+    trust_network[public_key] = set()
+    return private_key, public_key
+
+# Sends a message from the sender to the recipient
+def send_message(sender_private_key, sender_public_key, recipient_public_key, trust_network, message):
+    # Encrypt the message using the recipient's public key
+    encrypted_message = pow(message, recipient_public_key, recipient_public_key)
+    
+    # Sign the encrypted message using the sender's private key
+    signature = pow(encrypted_message, sender_private_key, sender_public_key)
+    
+    # Add the recipient's public key to the set of trusted keys for the sender's public key
+    trust_network[sender_public_key].add(recipient_public_key)
+    
+    # Return the encrypted message and signature
+    return encrypted_message, signature
+
+# Receives a message from the sender
+def receive_message(sender_public_key, recipient_private_key, trust_network, encrypted_message, signature):
+    # Verify that the sender's public key is trusted by the recipient's private key
+    if sender_public_key not in trust_network[recipient_private_key]:
+        raise Exception("Sender's public key is not trusted.")
+    
+    # Verify the signature using the sender's public key
+    if pow(signature, sender_public_key, sender_public_key) != pow(encrypted_message, recipient_private_key, sender_public_key):
+        raise Exception("Invalid signature.")
+    
+    # Decrypt the message using the recipient's private key
+    message = pow(encrypted_message, recipient_private_key, sender_public_key)
+    
+    # Return the message
+    return message
+
+# Initializes the trust network with a set of trusted public keys
+def initialize_trust_network(trusted_public_keys):
+    trust_network = {}
+    for public_key in trusted_public_keys:
+        trust_network[public_key] = set(trusted_public_keys)
+    return trust_network
+
+# Example usage
+if __name__ == '__main__':
+    # Initialize the trust network with a set of trusted public keys
+    trusted_public_keys = [generate_public_key(12345), generate_public_key(67890)]
+    trust_network = initialize_trust_network(trusted_public_keys)
+    
+    # Generate a new keypair and add it to the trust network
+    alice_private_key, alice_public_key = generate_keypair(trust_network)
+    
+    # Generate a new keypair and add it to the trust network
+    bob_private_key, bob_public_key = generate_keypair(trust_network)
+    
+    # Alice sends a message to Bob
+    message = 123
+    encrypted_message, signature = send_message(alice_private_key, alice_public_key, bob_public_key, trust_network, message)
+    
+    # Bob receives the message from Alice
+    received_message = receive_message(alice_public_key, bob_private_key, trust_network, encrypted_message, signature)
+    print("Bob received message:", received_message)
+    
+    # Try to receive a message
+
+def receive_message(sender_public_key, receiver_private_key, trust_network, encrypted_message, signature):
+    # Verify the signature with the sender's public key
+    if verify_signature(encrypted_message, sender_public_key, signature):
+        # Decrypt the message with the receiver's private key
+        decrypted_message = decrypt_message(encrypted_message, receiver_private_key)
+        # Check if the sender is trusted by the receiver
+        if sender_public_key in trust_network[receiver_private_key]:
+            return decrypted_message
+        else:
+            print("Sender is not trusted.")
+    else:
+        print("Invalid signature.")
+
+def main():
+    # Set up the trust network
+    trust_network = {}
+    alice_key = generate_keys()
+    bob_key = generate_keys()
+    trust_network[alice_key[1]] = [alice_key[0], bob_key[0]]
+    trust_network[bob_key[1]] = [bob_key[0]]
+    
+    # Alice sends message to Bob
+    alice_message = "Hello Bob!"
+    encrypted_message, signature = send_message(alice_key, bob_key[0], alice_message)
+    
+    # Bob receives the message from Alice
+    received_message = receive_message(alice_key[0], bob_key, trust_network, encrypted_message, signature)
+    print("Bob received message:", received_message)
+    
+    # Try to receive a message from an untrusted sender
+    eve_key = generate_keys()
+    eve_message = "I am an attacker!"
+    encrypted_message, signature = send_message(eve_key, bob_key[0], eve_message)
+    received_message = receive_message(eve_key[0], bob_key, trust_network, encrypted_message, signature)
+    print("Bob received message:", received_message)
+    
+if __name__ == "__main__":
+    main()
+
