@@ -1,0 +1,1079 @@
+(* Content-type: application/vnd.wolfram.cdf.text *)
+
+(*** Wolfram CDF File ***)
+(* http://www.wolfram.com/cdf *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       150,          7]
+NotebookDataLength[     56469,       1069]
+NotebookOptionsPosition[     55987,       1049]
+NotebookOutlinePosition[     56544,       1071]
+CellTagsIndexPosition[     56501,       1068]
+WindowTitle->CDF Plugin Example - State Committee Testimony
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`baseInterestRate$$ = 
+    0.05, $CellContext`creditMarketHistory$$ = CompressedData["
+1:eJyVkWtQCwAAx6fOI+ZVLRduSFEnSaJ0uj8SxaJa20VctKlWp9pFybUeSrrD
+oinbWrU17fZQrcweyHVFHtcNJy6nKa+LrUs1FcM8vvjud/f7/PvwW5GUGXt0
+GoFAYP5RKPiLAuOE4IDTvfVotTlEhGl5OJETkG7dVgznleNPkk8Vg7PorkVG
+ywWXGqwWfD4G6SubX8EKBp6M1/VpaUfQz/JPatVRQfhPIgZKY7bKgDuH/X3P
+lZeBWH1KErqKh+MGk30ONx/OM3PbvKw5MFMiiRQ6F+EZLdLyMAEif57MrBsW
+YvDbNTU94Apef9yYdTqejzQmi30oWIx7plGKi5MQ1tDsh7YeCcqcc8dclAI8
+Ni7qb2BLkPAiZGcvRwgzp4tYaRbiLZmReW53FZicomd6cwMO7hru/nFcDNpA
+WBOTIoat0EeVXiFDx+gyeh5XhZ52xyTPVAluaTpj+3hisBJqIh0C61FGyouz
+GkRoiOr8Hu7DR0zeptTJrDrMG00r7eXz4Cc/kR0dJYCu6P1AxZ/OW447e99F
+KfIs3nsYZ6Uof5hY+vy8DI5Da2aXLG/ClGcCq+BAI1Y/tX5yrVBC7kRaMitI
+CcalGo8UZxW8mWV79eRmSCyXZgwZm5FywXW6vlCFlfYDTZupEmSOidwGFRKs
+ve9jMbqLsMQG5f5NYkzm0/tdb1/F0rSP9WeuNMD/rh87dEwKLTeiPz9OjI0p
+k+uK+dWY+8gYn/6uBG4jE9Rvh5ggVlbG3KwtgYhPs5JHk+ESwzo81Jf873vO
+2AM3hxABqqYkFGK0Apfl4u2dEUqcCbTbaYFqDLsW/ZB9aEHLgi9B7t1qWBbL
+zU3bNFhP6trim6tHe/T8EG/TTRTYjxZKjXq89HypHmzUYfvFhb9IvjqMkO6Y
+Hm/VYjzIr0Px5joM5OyvPx310PLvl3gpdPDfu0O4XK2Fh3oer6r6BkYmsp5l
+tLeBmdFIsiReR+XVWsN5vQaFrXIT47IWhtk9X9bpNOhKZVu7fdUYEDHoHhua
+McEJX+Y+1YbfrCdu1Q==
+    "], $CellContext`dist$$ = 
+    WeibullDistribution, $CellContext`events$$ = CompressedData["
+1:eJwBLQPS/CFib1JlAQAAAGQAAACm9jwmEQDGPxf2T8u6788/RrIZZG0Zmz9I
+3ZqZB85LP57L+d0ZTSs/xNBbrnxtnT9FJrRDYb9mPzmDlK0cqMg//QzFLgAD
+lT/jXqSQwwnMP6XjRdarTJ8/9XxpoyqukT9tkAbKbQHHP9N68Nv9Ftw/vENI
+6sY1UD8o+ZGLXFKUP9XKshZ7acc/lFLfME45sz9oW6FjhfvdP8idQQi/p9c/
+n4GEwWcIdj8ko/tGrM0oP1X48/e7EbQ/8LKAQr1SkD9TWOKVK5iDP2BJk6EK
+mbQ/9Su2wxE/pT9eR0HOsz4hP3PRpf+km6g/P5JVl9XPmT/GfOOt6KGQP15Q
+I4aZXJU/LvxpabyU6T7XX6DU9d2qP3H74UHuL0M/kplRhsC8rj89/sCJpaCv
+P4A36fvJ02o/JvY21g99lj/HpBQ8G9P8PkBVHxaZDsU/s/7jBEsR0j+HK+yf
+ZHDlP8SAaBJVyXs/RjLaCigMgz8sD6JrbGqGPwwPk1dKt1k/Y5BkXMyYPT+r
+WHqUpcikP+ofIcjepxU/EhNe0OOfOz983jEfKS8zP8GQCial27E/KfokC8gp
+4j9ItQqHtN4CQJtklhv86oA/PIi5iHjFvj8jK5M9lEJBP7MOycqHEYI/YaLY
+5nWT2D+H7WECCR12P6M+LIhcmn4/WBYSVS1lfz/3ok3CtZAVPyI5SMSaF9U+
++LE/M8XJij+VNoVyeC4gPxnJ8AYTezY/Z0vqjAOq/j9pP9GfP/8iP4Y9/EYH
+NrU/G4S8/ZHD8j+uisHweRN/P6djxlKkPRdAUiHUC793rj+22Hv9hmdFP6qs
+qdXgCcY/13VWGYwXmD8QdNYbBdSAPxOr79v659A+LGwdDj7piD9psMevfzii
+P2ncTg9EybA/zCMB5UVYnj9JZxXMSGRAP+pCmkhUBvM+vDhYIAg7vj/JelAa
+qbYmP0/PtAYaZcE/VVV05UrPpz+gcfkv3wxePgh4FdoSGfU/llMK6k5yVj9a
+JRYGGT+wP89NFeSH9Jo/pxeW8geWwT+5wemR/HffP6dQzUnVjKI/jHxiU3Ao
+7j+AWTK735nEP5Jkegc=
+    "], $CellContext`interestLoadCoefficient$$ = 
+    0.004, $CellContext`interestRateVolatility$$ = 
+    0.02, $CellContext`visualizationFunction$$ = 
+    ListPlot, $CellContext`\[Mu]$$ = 0.2, $CellContext`\[Sigma]$$ = 0.8, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`interestLoadCoefficient$$], 0.004, 
+       Tooltip[
+       "sensitivity coefficient", 
+        "the higher this value the more having a high outstanding principal \
+balance will increase the borrower has to pay on new bonds"]}, 0.001, 0.016, 
+      0.001}, {{
+       Hold[$CellContext`visualizationFunction$$], ListPlot, 
+       "visualization function"}, {
+      ListPlot -> "ListPlot", ListLogPlot -> 
+       "ListLogPlot", $CellContext`statistics -> "statistics"}}, {{
+       Hold[$CellContext`dist$$], WeibullDistribution}, {
+      WeibullDistribution, GammaDistribution, LogNormalDistribution}}, {{
+       Hold[$CellContext`\[Mu]$$], 0.2}, 0.1, 1, 0.1}, {{
+       Hold[$CellContext`\[Sigma]$$], 0.8}, 0.1, 3, 0.1}, {{
+       Hold[$CellContext`events$$], CompressedData["
+1:eJwBLQPS/CFib1JlAQAAAGQAAACm9jwmEQDGPxf2T8u6788/RrIZZG0Zmz9I
+3ZqZB85LP57L+d0ZTSs/xNBbrnxtnT9FJrRDYb9mPzmDlK0cqMg//QzFLgAD
+lT/jXqSQwwnMP6XjRdarTJ8/9XxpoyqukT9tkAbKbQHHP9N68Nv9Ftw/vENI
+6sY1UD8o+ZGLXFKUP9XKshZ7acc/lFLfME45sz9oW6FjhfvdP8idQQi/p9c/
+n4GEwWcIdj8ko/tGrM0oP1X48/e7EbQ/8LKAQr1SkD9TWOKVK5iDP2BJk6EK
+mbQ/9Su2wxE/pT9eR0HOsz4hP3PRpf+km6g/P5JVl9XPmT/GfOOt6KGQP15Q
+I4aZXJU/LvxpabyU6T7XX6DU9d2qP3H74UHuL0M/kplRhsC8rj89/sCJpaCv
+P4A36fvJ02o/JvY21g99lj/HpBQ8G9P8PkBVHxaZDsU/s/7jBEsR0j+HK+yf
+ZHDlP8SAaBJVyXs/RjLaCigMgz8sD6JrbGqGPwwPk1dKt1k/Y5BkXMyYPT+r
+WHqUpcikP+ofIcjepxU/EhNe0OOfOz983jEfKS8zP8GQCial27E/KfokC8gp
+4j9ItQqHtN4CQJtklhv86oA/PIi5iHjFvj8jK5M9lEJBP7MOycqHEYI/YaLY
+5nWT2D+H7WECCR12P6M+LIhcmn4/WBYSVS1lfz/3ok3CtZAVPyI5SMSaF9U+
++LE/M8XJij+VNoVyeC4gPxnJ8AYTezY/Z0vqjAOq/j9pP9GfP/8iP4Y9/EYH
+NrU/G4S8/ZHD8j+uisHweRN/P6djxlKkPRdAUiHUC793rj+22Hv9hmdFP6qs
+qdXgCcY/13VWGYwXmD8QdNYbBdSAPxOr79v659A+LGwdDj7piD9psMevfzii
+P2ncTg9EybA/zCMB5UVYnj9JZxXMSGRAP+pCmkhUBvM+vDhYIAg7vj/JelAa
+qbYmP0/PtAYaZcE/VVV05UrPpz+gcfkv3wxePgh4FdoSGfU/llMK6k5yVj9a
+JRYGGT+wP89NFeSH9Jo/pxeW8geWwT+5wemR/HffP6dQzUnVjKI/jHxiU3Ao
+7j+AWTK735nEP5Jkegc=
+       "]}}, {{
+       Hold[$CellContext`baseInterestRate$$], 0.05, "base interest rate"}, 
+      0.01, 0.15, 0.01}, {{
+       Hold[$CellContext`interestRateVolatility$$], 0.02, 
+       "interest rate volatility"}, 0.005, 0.03, 0.005}, {{
+       Hold[$CellContext`creditMarketHistory$$], CompressedData["
+1:eJyVkWtQCwAAx6fOI+ZVLRduSFEnSaJ0uj8SxaJa20VctKlWp9pFybUeSrrD
+oinbWrU17fZQrcweyHVFHtcNJy6nKa+LrUs1FcM8vvjud/f7/PvwW5GUGXt0
+GoFAYP5RKPiLAuOE4IDTvfVotTlEhGl5OJETkG7dVgznleNPkk8Vg7PorkVG
+ywWXGqwWfD4G6SubX8EKBp6M1/VpaUfQz/JPatVRQfhPIgZKY7bKgDuH/X3P
+lZeBWH1KErqKh+MGk30ONx/OM3PbvKw5MFMiiRQ6F+EZLdLyMAEif57MrBsW
+YvDbNTU94Apef9yYdTqejzQmi30oWIx7plGKi5MQ1tDsh7YeCcqcc8dclAI8
+Ni7qb2BLkPAiZGcvRwgzp4tYaRbiLZmReW53FZicomd6cwMO7hru/nFcDNpA
+WBOTIoat0EeVXiFDx+gyeh5XhZ52xyTPVAluaTpj+3hisBJqIh0C61FGyouz
+GkRoiOr8Hu7DR0zeptTJrDrMG00r7eXz4Cc/kR0dJYCu6P1AxZ/OW447e99F
+KfIs3nsYZ6Uof5hY+vy8DI5Da2aXLG/ClGcCq+BAI1Y/tX5yrVBC7kRaMitI
+CcalGo8UZxW8mWV79eRmSCyXZgwZm5FywXW6vlCFlfYDTZupEmSOidwGFRKs
+ve9jMbqLsMQG5f5NYkzm0/tdb1/F0rSP9WeuNMD/rh87dEwKLTeiPz9OjI0p
+k+uK+dWY+8gYn/6uBG4jE9Rvh5ggVlbG3KwtgYhPs5JHk+ESwzo81Jf873vO
+2AM3hxABqqYkFGK0Apfl4u2dEUqcCbTbaYFqDLsW/ZB9aEHLgi9B7t1qWBbL
+zU3bNFhP6trim6tHe/T8EG/TTRTYjxZKjXq89HypHmzUYfvFhb9IvjqMkO6Y
+Hm/VYjzIr0Px5joM5OyvPx310PLvl3gpdPDfu0O4XK2Fh3oer6r6BkYmsp5l
+tLeBmdFIsiReR+XVWsN5vQaFrXIT47IWhtk9X9bpNOhKZVu7fdUYEDHoHhua
+McEJX+Y+1YbfrCdu1Q==
+       "]}, 0.005, 0.03, 0.005}}, Typeset`size$$ = {410., {178.5, 185.5}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`interestLoadCoefficient$259$$ = 
+    0, $CellContext`visualizationFunction$264$$ = 
+    False, $CellContext`dist$265$$ = 0, $CellContext`\[Mu]$266$$ = 
+    0, $CellContext`\[Sigma]$267$$ = 0, $CellContext`baseInterestRate$268$$ = 
+    0, $CellContext`interestRateVolatility$269$$ = 
+    0, $CellContext`creditMarketHistory$270$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`baseInterestRate$$ = 
+        0.05, $CellContext`creditMarketHistory$$ = CompressedData["
+1:eJyVkWtQCwAAx6fOI+ZVLRduSFEnSaJ0uj8SxaJa20VctKlWp9pFybUeSrrD
+oinbWrU17fZQrcweyHVFHtcNJy6nKa+LrUs1FcM8vvjud/f7/PvwW5GUGXt0
+GoFAYP5RKPiLAuOE4IDTvfVotTlEhGl5OJETkG7dVgznleNPkk8Vg7PorkVG
+ywWXGqwWfD4G6SubX8EKBp6M1/VpaUfQz/JPatVRQfhPIgZKY7bKgDuH/X3P
+lZeBWH1KErqKh+MGk30ONx/OM3PbvKw5MFMiiRQ6F+EZLdLyMAEif57MrBsW
+YvDbNTU94Apef9yYdTqejzQmi30oWIx7plGKi5MQ1tDsh7YeCcqcc8dclAI8
+Ni7qb2BLkPAiZGcvRwgzp4tYaRbiLZmReW53FZicomd6cwMO7hru/nFcDNpA
+WBOTIoat0EeVXiFDx+gyeh5XhZ52xyTPVAluaTpj+3hisBJqIh0C61FGyouz
+GkRoiOr8Hu7DR0zeptTJrDrMG00r7eXz4Cc/kR0dJYCu6P1AxZ/OW447e99F
+KfIs3nsYZ6Uof5hY+vy8DI5Da2aXLG/ClGcCq+BAI1Y/tX5yrVBC7kRaMitI
+CcalGo8UZxW8mWV79eRmSCyXZgwZm5FywXW6vlCFlfYDTZupEmSOidwGFRKs
+ve9jMbqLsMQG5f5NYkzm0/tdb1/F0rSP9WeuNMD/rh87dEwKLTeiPz9OjI0p
+k+uK+dWY+8gYn/6uBG4jE9Rvh5ggVlbG3KwtgYhPs5JHk+ESwzo81Jf873vO
+2AM3hxABqqYkFGK0Apfl4u2dEUqcCbTbaYFqDLsW/ZB9aEHLgi9B7t1qWBbL
+zU3bNFhP6trim6tHe/T8EG/TTRTYjxZKjXq89HypHmzUYfvFhb9IvjqMkO6Y
+Hm/VYjzIr0Px5joM5OyvPx310PLvl3gpdPDfu0O4XK2Fh3oer6r6BkYmsp5l
+tLeBmdFIsiReR+XVWsN5vQaFrXIT47IWhtk9X9bpNOhKZVu7fdUYEDHoHhua
+McEJX+Y+1YbfrCdu1Q==
+         "], $CellContext`dist$$ = 
+        WeibullDistribution, $CellContext`events$$ = CompressedData["
+1:eJwBLQPS/CFib1JlAQAAAGQAAACm9jwmEQDGPxf2T8u6788/RrIZZG0Zmz9I
+3ZqZB85LP57L+d0ZTSs/xNBbrnxtnT9FJrRDYb9mPzmDlK0cqMg//QzFLgAD
+lT/jXqSQwwnMP6XjRdarTJ8/9XxpoyqukT9tkAbKbQHHP9N68Nv9Ftw/vENI
+6sY1UD8o+ZGLXFKUP9XKshZ7acc/lFLfME45sz9oW6FjhfvdP8idQQi/p9c/
+n4GEwWcIdj8ko/tGrM0oP1X48/e7EbQ/8LKAQr1SkD9TWOKVK5iDP2BJk6EK
+mbQ/9Su2wxE/pT9eR0HOsz4hP3PRpf+km6g/P5JVl9XPmT/GfOOt6KGQP15Q
+I4aZXJU/LvxpabyU6T7XX6DU9d2qP3H74UHuL0M/kplRhsC8rj89/sCJpaCv
+P4A36fvJ02o/JvY21g99lj/HpBQ8G9P8PkBVHxaZDsU/s/7jBEsR0j+HK+yf
+ZHDlP8SAaBJVyXs/RjLaCigMgz8sD6JrbGqGPwwPk1dKt1k/Y5BkXMyYPT+r
+WHqUpcikP+ofIcjepxU/EhNe0OOfOz983jEfKS8zP8GQCial27E/KfokC8gp
+4j9ItQqHtN4CQJtklhv86oA/PIi5iHjFvj8jK5M9lEJBP7MOycqHEYI/YaLY
+5nWT2D+H7WECCR12P6M+LIhcmn4/WBYSVS1lfz/3ok3CtZAVPyI5SMSaF9U+
++LE/M8XJij+VNoVyeC4gPxnJ8AYTezY/Z0vqjAOq/j9pP9GfP/8iP4Y9/EYH
+NrU/G4S8/ZHD8j+uisHweRN/P6djxlKkPRdAUiHUC793rj+22Hv9hmdFP6qs
+qdXgCcY/13VWGYwXmD8QdNYbBdSAPxOr79v659A+LGwdDj7piD9psMevfzii
+P2ncTg9EybA/zCMB5UVYnj9JZxXMSGRAP+pCmkhUBvM+vDhYIAg7vj/JelAa
+qbYmP0/PtAYaZcE/VVV05UrPpz+gcfkv3wxePgh4FdoSGfU/llMK6k5yVj9a
+JRYGGT+wP89NFeSH9Jo/pxeW8geWwT+5wemR/HffP6dQzUnVjKI/jHxiU3Ao
+7j+AWTK735nEP5Jkegc=
+         "], $CellContext`interestLoadCoefficient$$ = 
+        0.004, $CellContext`interestRateVolatility$$ = 
+        0.02, $CellContext`visualizationFunction$$ = 
+        ListPlot, $CellContext`\[Mu]$$ = 0.2, $CellContext`\[Sigma]$$ = 0.8}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`interestLoadCoefficient$$, \
+$CellContext`interestLoadCoefficient$259$$, 0], 
+        Hold[$CellContext`visualizationFunction$$, \
+$CellContext`visualizationFunction$264$$, False], 
+        Hold[$CellContext`dist$$, $CellContext`dist$265$$, 0], 
+        Hold[$CellContext`\[Mu]$$, $CellContext`\[Mu]$266$$, 0], 
+        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$267$$, 0], 
+        Hold[$CellContext`baseInterestRate$$, \
+$CellContext`baseInterestRate$268$$, 0], 
+        Hold[$CellContext`interestRateVolatility$$, \
+$CellContext`interestRateVolatility$269$$, 0], 
+        Hold[$CellContext`creditMarketHistory$$, \
+$CellContext`creditMarketHistory$270$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> (SeedRandom[123]; Column[{
+          $CellContext`sequenceToGrid[
+           Labeled[
+            SetterBar[
+             Dynamic[$CellContext`dist$$, ($CellContext`events$$ = RandomReal[
+                 #[
+                  $CellContext`a[#][$CellContext`\[Mu]$$, $CellContext`\
+\[Sigma]$$], 
+                  $CellContext`b[#][$CellContext`\[Mu]$$, $CellContext`\
+\[Sigma]$$]], 100]; $CellContext`dist$$ = #)& ], {
+             WeibullDistribution -> 
+              Style["Weibull", 9, FontFamily -> "Arial"], GammaDistribution -> 
+              Style["Gamma", 9, FontFamily -> "Arial"], LogNormalDistribution -> 
+              Style["log normal", 9, FontFamily -> "Arial"]}, 
+             BaseStyle -> {"Label"}], 
+            Style["distribution", 10], Left], 
+           Column[{
+             Style["  targeted mean", 10], 
+             Manipulator[
+              
+              Dynamic[$CellContext`\[Mu]$$, ($CellContext`events$$ = 
+                RandomReal[
+                  $CellContext`dist$$[
+                   $CellContext`a[$CellContext`dist$$][#, $CellContext`\
+\[Sigma]$$], 
+                   $CellContext`b[$CellContext`dist$$][#, $CellContext`\
+\[Sigma]$$]], 100]; $CellContext`\[Mu]$$ = #)& ], {0.1, 1, 0.1}, ImageSize -> 
+              Small, Appearance -> "Labeled", AppearanceElements -> None]}], 
+           Column[{
+             Style["  targeted standard deviation", 10], 
+             Manipulator[
+              
+              Dynamic[$CellContext`\[Sigma]$$, ($CellContext`events$$ = 
+                RandomReal[
+                  $CellContext`dist$$[
+                   $CellContext`a[$CellContext`dist$$][$CellContext`\[Mu]$$, \
+#], 
+                   $CellContext`b[$CellContext`dist$$][$CellContext`\[Mu]$$, \
+#]], 100]; $CellContext`\[Sigma]$$ = #)& ], {0.1, 3, 0.1}, ImageSize -> Small,
+               Appearance -> "Labeled", AppearanceElements -> None]}], 
+           Column[{
+             Style["  base interest rate", 10], 
+             Manipulator[
+              
+              Dynamic[$CellContext`baseInterestRate$$, \
+($CellContext`creditMarketHistory$$ = FoldList[Clip[# + #2, {0.01, 0.2}]& , #, 
+                  RandomReal[
+                   NormalDistribution[
+                   0, $CellContext`interestRateVolatility$$], 100 - 
+                   1]]; $CellContext`baseInterestRate$$ = #)& ], {0.01, 0.15, 
+              0.01}, ImageSize -> Small, Appearance -> "Labeled", 
+              AppearanceElements -> None]}], 
+           Column[{
+             Style["  interest rate volatility", 10], 
+             Manipulator[
+              
+              Dynamic[$CellContext`interestRateVolatility$$, \
+($CellContext`creditMarketHistory$$ = If[# <= 0., 
+                  Table[$CellContext`baseInterestRate$$, {100}], 
+                  FoldList[
+                  Clip[# + #2, {0.01, 
+                    0.2}]& , $CellContext`baseInterestRate$$, 
+                   RandomReal[
+                    NormalDistribution[0, #], 100 - 
+                    1]]]; $CellContext`interestRateVolatility$$ = #)& ], {
+              0.005, 0.03, 0.005}, ImageSize -> Small, Appearance -> 
+              "Labeled", AppearanceElements -> None]}]], 
+          Dynamic[
+           Pane[
+            
+            Module[{$CellContext`lhl$, $CellContext`totals$, \
+$CellContext`opb$, $CellContext`borrowingRateHistory$}, $CellContext`lhl$ = \
+$CellContext`loanHistoryList[$CellContext`events$$, \
+$CellContext`creditMarketHistory$$, "InterestRateFunction" :> 
+                Function[{$CellContext`el$, $CellContext`cm$, \
+$CellContext`nb$, $CellContext`am$}, $CellContext`cm$ + \
+$CellContext`interestLoadCoefficient$$ ($CellContext`nb$ + 
+                    If[Length[$CellContext`el$] > 0, 
+                    Total[
+                    Map[First, $CellContext`el$]], 0])], 
+                "AmortizationFunction" :> \
+$CellContext`defaultAmortizationPeriodFunction, "SowFunction" -> ({#, 
+                  
+                  Part[#2, 
+                   1]}& )]; $CellContext`opb$ = \
+$CellContext`historyToOutstandingPrincipalBalance[
+                Part[$CellContext`lhl$, 1]]; $CellContext`totals$ = Take[
+                $CellContext`totalPayments[
+                 Part[$CellContext`lhl$, 2]], 
+                100]; $CellContext`borrowingRateHistory$ = Cases[
+                Part[$CellContext`lhl$, 2], $CellContext`loan[
+                  PatternTest[
+                   Blank[], NumericQ], 
+                  PatternTest[
+                   Pattern[$CellContext`r, 
+                    Blank[]], NumericQ], 
+                  PatternTest[
+                   Blank[], NumericQ]] :> $CellContext`r, {2}, 100]; 
+             Switch[$CellContext`visualizationFunction$$, 
+               Alternatives[ListPlot, ListLogPlot], 
+               Column[{
+                 Style[
+                  Labeled[
+                   $CellContext`visualizationFunction$$[{
+                    Tooltip[$CellContext`totals$, "total debt payments"], 
+                    
+                    Tooltip[$CellContext`opb$, 
+                    "outstanding principal balance"], 
+                    Tooltip[$CellContext`events$$, "annual events"]}, Mesh -> 
+                    All, MeshStyle -> Directive[
+                    AbsolutePointSize[2], 
+                    Opacity[0.3]], 
+                    Apply[Sequence, $CellContext`constantDecorations1]], {
+                   "time", 
+                    
+                    Switch[$CellContext`visualizationFunction$$, ListPlot, 
+                    "$", ListLogPlot, 
+                    "$ \!\(\*SubscriptBox[\(log\), \(10\)]\)"]}, {
+                   Bottom, Left}, RotateLabel -> True], FontFamily -> "Arial",
+                   9, 
+                  GrayLevel[0.28]], 
+                 Style[
+                  Labeled[
+                   Show[
+                    MapIndexed[ListPlot[#, PlotStyle -> ColorData[1][
+                    First[#2]], Mesh -> All, MeshStyle -> ColorData[1][
+                    First[#2]], 
+                    Apply[Sequence, $CellContext`constantDecorations2]]& , {
+                    
+                    Tooltip[$CellContext`creditMarketHistory$$, 
+                    "market interest rate"], 
+                    Tooltip[
+                    Map[Part[#, 2, 2]& , 
+                    Part[$CellContext`lhl$, 2]], "borrowing rate"]}], 
+                    PlotRange -> All], {"time", "interest rate"}, {
+                   Bottom, Left}, RotateLabel -> True], FontFamily -> "Arial",
+                   9, 
+                  GrayLevel[0.28]]}], 
+               Blank[], 
+               Column[{
+                 $CellContext`statisticalVisualization[$CellContext`events$$, \
+$CellContext`totals$, $CellContext`opb$, $CellContext`creditMarketHistory$$, \
+$CellContext`borrowingRateHistory$]}]]], {410, 250}, ImageSizeAction -> 
+            "Clip", Alignment -> {Center, Center}]]}, 
+         Alignment -> {Center, Center}, 
+         BaseStyle -> {FontFamily -> "Arial"}]), 
+      "Specifications" :> {{{$CellContext`interestLoadCoefficient$$, 0.004, 
+          Tooltip[
+          "sensitivity coefficient", 
+           "the higher this value the more having a high outstanding \
+principal balance will increase the borrower has to pay on new bonds"]}, 
+         0.001, 0.016, 0.001, Appearance -> "Labeled", ImageSize -> 
+         Small}, {{$CellContext`visualizationFunction$$, ListPlot, 
+          "visualization function"}, {
+         ListPlot -> "ListPlot", ListLogPlot -> 
+          "ListLogPlot", $CellContext`statistics -> 
+          "statistics"}}, {{$CellContext`dist$$, WeibullDistribution}, {
+         WeibullDistribution, GammaDistribution, LogNormalDistribution}, 
+         ControlType -> None}, {{$CellContext`\[Mu]$$, 0.2}, 0.1, 1, 0.1, 
+         ControlType -> None}, {{$CellContext`\[Sigma]$$, 0.8}, 0.1, 3, 0.1, 
+         ControlType -> None}, {{$CellContext`events$$, CompressedData["
+1:eJwBLQPS/CFib1JlAQAAAGQAAACm9jwmEQDGPxf2T8u6788/RrIZZG0Zmz9I
+3ZqZB85LP57L+d0ZTSs/xNBbrnxtnT9FJrRDYb9mPzmDlK0cqMg//QzFLgAD
+lT/jXqSQwwnMP6XjRdarTJ8/9XxpoyqukT9tkAbKbQHHP9N68Nv9Ftw/vENI
+6sY1UD8o+ZGLXFKUP9XKshZ7acc/lFLfME45sz9oW6FjhfvdP8idQQi/p9c/
+n4GEwWcIdj8ko/tGrM0oP1X48/e7EbQ/8LKAQr1SkD9TWOKVK5iDP2BJk6EK
+mbQ/9Su2wxE/pT9eR0HOsz4hP3PRpf+km6g/P5JVl9XPmT/GfOOt6KGQP15Q
+I4aZXJU/LvxpabyU6T7XX6DU9d2qP3H74UHuL0M/kplRhsC8rj89/sCJpaCv
+P4A36fvJ02o/JvY21g99lj/HpBQ8G9P8PkBVHxaZDsU/s/7jBEsR0j+HK+yf
+ZHDlP8SAaBJVyXs/RjLaCigMgz8sD6JrbGqGPwwPk1dKt1k/Y5BkXMyYPT+r
+WHqUpcikP+ofIcjepxU/EhNe0OOfOz983jEfKS8zP8GQCial27E/KfokC8gp
+4j9ItQqHtN4CQJtklhv86oA/PIi5iHjFvj8jK5M9lEJBP7MOycqHEYI/YaLY
+5nWT2D+H7WECCR12P6M+LIhcmn4/WBYSVS1lfz/3ok3CtZAVPyI5SMSaF9U+
++LE/M8XJij+VNoVyeC4gPxnJ8AYTezY/Z0vqjAOq/j9pP9GfP/8iP4Y9/EYH
+NrU/G4S8/ZHD8j+uisHweRN/P6djxlKkPRdAUiHUC793rj+22Hv9hmdFP6qs
+qdXgCcY/13VWGYwXmD8QdNYbBdSAPxOr79v659A+LGwdDj7piD9psMevfzii
+P2ncTg9EybA/zCMB5UVYnj9JZxXMSGRAP+pCmkhUBvM+vDhYIAg7vj/JelAa
+qbYmP0/PtAYaZcE/VVV05UrPpz+gcfkv3wxePgh4FdoSGfU/llMK6k5yVj9a
+JRYGGT+wP89NFeSH9Jo/pxeW8geWwT+5wemR/HffP6dQzUnVjKI/jHxiU3Ao
+7j+AWTK735nEP5Jkegc=
+          "]}, ControlType -> 
+         None}, {{$CellContext`baseInterestRate$$, 0.05, 
+          "base interest rate"}, 0.01, 0.15, 0.01, ControlType -> 
+         None}, {{$CellContext`interestRateVolatility$$, 0.02, 
+          "interest rate volatility"}, 0.005, 0.03, 0.005, ControlType -> 
+         None}, {{$CellContext`creditMarketHistory$$, CompressedData["
+1:eJyVkWtQCwAAx6fOI+ZVLRduSFEnSaJ0uj8SxaJa20VctKlWp9pFybUeSrrD
+oinbWrU17fZQrcweyHVFHtcNJy6nKa+LrUs1FcM8vvjud/f7/PvwW5GUGXt0
+GoFAYP5RKPiLAuOE4IDTvfVotTlEhGl5OJETkG7dVgznleNPkk8Vg7PorkVG
+ywWXGqwWfD4G6SubX8EKBp6M1/VpaUfQz/JPatVRQfhPIgZKY7bKgDuH/X3P
+lZeBWH1KErqKh+MGk30ONx/OM3PbvKw5MFMiiRQ6F+EZLdLyMAEif57MrBsW
+YvDbNTU94Apef9yYdTqejzQmi30oWIx7plGKi5MQ1tDsh7YeCcqcc8dclAI8
+Ni7qb2BLkPAiZGcvRwgzp4tYaRbiLZmReW53FZicomd6cwMO7hru/nFcDNpA
+WBOTIoat0EeVXiFDx+gyeh5XhZ52xyTPVAluaTpj+3hisBJqIh0C61FGyouz
+GkRoiOr8Hu7DR0zeptTJrDrMG00r7eXz4Cc/kR0dJYCu6P1AxZ/OW447e99F
+KfIs3nsYZ6Uof5hY+vy8DI5Da2aXLG/ClGcCq+BAI1Y/tX5yrVBC7kRaMitI
+CcalGo8UZxW8mWV79eRmSCyXZgwZm5FywXW6vlCFlfYDTZupEmSOidwGFRKs
+ve9jMbqLsMQG5f5NYkzm0/tdb1/F0rSP9WeuNMD/rh87dEwKLTeiPz9OjI0p
+k+uK+dWY+8gYn/6uBG4jE9Rvh5ggVlbG3KwtgYhPs5JHk+ESwzo81Jf873vO
+2AM3hxABqqYkFGK0Apfl4u2dEUqcCbTbaYFqDLsW/ZB9aEHLgi9B7t1qWBbL
+zU3bNFhP6trim6tHe/T8EG/TTRTYjxZKjXq89HypHmzUYfvFhb9IvjqMkO6Y
+Hm/VYjzIr0Px5joM5OyvPx310PLvl3gpdPDfu0O4XK2Fh3oer6r6BkYmsp5l
+tLeBmdFIsiReR+XVWsN5vQaFrXIT47IWhtk9X9bpNOhKZVu7fdUYEDHoHhua
+McEJX+Y+1YbfrCdu1Q==
+          "]}, 0.005, 0.03, 0.005, ControlType -> None}}, 
+      "Options" :> {
+       AutorunSequencing -> {1, 2}, ControllerLinking -> False, 
+        LabelStyle -> {FontColor -> GrayLevel[0.28]}, AppearanceElements -> 
+        None}, "DefaultOptions" :> {}],
+     ImageSizeCache->{459., {228., 233.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`sequenceToGrid[
+         Pattern[$CellContext`dist, 
+          Blank[]], 
+         Pattern[$CellContext`\[Mu], 
+          Blank[]], 
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]], 
+         Pattern[$CellContext`v, 
+          Blank[]]] := Grid[{{
+           
+           Column[{"loss distribution", "parameters"}, 
+            Center], $CellContext`dist, SpanFromLeft}, {
+          SpanFromAbove, $CellContext`\[Mu], $CellContext`\[Sigma]}, {
+           
+           Column[{"credit market", "parameters"}, 
+            Center], $CellContext`r, $CellContext`v}}, Frame -> All, 
+         FrameStyle -> GrayLevel[0.28], Background -> {{
+            RGBColor[{0.88, 0.94, 0.95}], {None}}, {
+            RGBColor[{0.92, 0.96, 0.98}], {None}}}, 
+         Alignment -> {
+          Left, Center, {{1, 2} -> {Center, Center}, {{1, 3}, {1, 1}} -> {
+             Center, Center}}}, 
+         BaseStyle -> {
+          FontFamily -> "Arial", FontSize -> 11, FontColor -> 
+           GrayLevel[0.28]}], $CellContext`a[GammaDistribution] = 
+       InterpolatingFunction[{{0.1, 1.}, {0.1, 3.0000000000000004`}}, {
+         4, 7, 0, {10, 30}, {4, 4}, 0, 0, 0, 0, Automatic}, {{0.1, 0.2, 
+          0.30000000000000004`, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9, 
+          1.}, {0.1, 0.2, 0.30000000000000004`, 0.4, 0.5, 0.6, 
+          0.7000000000000001, 0.8, 0.9, 1., 1.1, 1.2000000000000002`, 
+          1.3000000000000003`, 1.4000000000000001`, 1.5000000000000002`, 1.6, 
+          1.7000000000000002`, 1.8000000000000003`, 1.9000000000000001`, 2., 
+          2.1, 2.2, 2.3000000000000003`, 2.4000000000000004`, 
+          2.5000000000000004`, 2.6, 2.7, 2.8000000000000003`, 
+          2.9000000000000004`, 3.0000000000000004`}}, {
+         Developer`PackedArrayForm, CompressedData["
+1:eJwV02O4EAYYBeCbXTe7273Ztpe9jFXLtrW2tLBlu5bdlpaXbdu2XXvv9zzv
+OX/Pny+4aafqHcMEBARkCQ0XWmEJR3giEJFIRCYKUYlGdGIQk1gEEps4xCUe
+8UlAQhKRmCQkJRnJSUEQKQkmhFSkJg1pSUd6MpCRTGQO3U1WspGdHOQkF7nJ
+Q17ykZ8CFKQQhSlCUYpRnBL8QElKUZoylKUc5alARSpRmSpU5UeqUZ0a1KQW
+talDXepRn59oQEMa8TONaUJTmtGcFrSkFa1pQ1va0Z4OdKQTnelCV7rRnR70
+pBe96UNf+tGfXxjAr/zGQAYxmCEM5XeGMZwRjOQP/mQUoxnDWMYxnglMZBKT
+mcJUpjGdGcxkFrOZw1zm8RfzWcBCFrGYJSxlGctZwUpWsZo1/M0/rGUd69nA
+Rv5lE5vZwla2sZ0d/MdOdrGbPexlH/s5wEEOcZgjHOUYxznBSU5xmjOc5Rzn
+ucBFLnGZK1zlGte5wU1ucZs73OUe93nAQx7xmCc85RnPecFLXvGaN7zlHe/5
+wEc+8ZkvfOUb3wl9/jCEJRzhiUBEIhGZKEQlGtGJQUxiEUhs4hCXeMQnAQlJ
+RGKSkJRkJCcFQaQkmBBSkZo0pCUd6clARjKRmf8BStGFbQ==
+          "], CompressedData["
+1:eJxFVXtQ1GUUBUMEDTVCEyIQI1MhawoLQjo/QUe0mSxkiJTKtBoLG1w0QwRB
+RtpxRFZkUzRSAwFRaHkFLG4sYLLgY9QkMUBYQUgeJRWMjzCD+9393D9gfo/v
+nnvPOff8PNZGhXxibWVl5T32h36DeEi/i3A2qVxNKgPu07UO25x+WHoj9hie
+ofuZ8Bv/Yp65Wwtxbi9u9F4dKQrehTh6byc0mT2RwwOJcKH349BWXRJ7YGEM
+fOncZlw3HIoJ84nGf1Q/CsnLHC5rwzegnep8hoUu2ROXFX/KuB8j16ZydXT6
+WqRR3TU40b+r9Ke7H3D9CHgFufZ3vroKHYQTjgY7ozlxaxheJ7xQBD6v9gze
+thLthBvCuFMUMe9tuFKdNsyjeS4x7s88r4HrlDE/Ou4zH/HMi+jrKPeTiRbq
+I4PPaXnefXhA5zU8bwrMzFsAzfs1tjN/Yt4kyWM+zbud+4mDN80bi3bmVcy7
+hXXZzPNukjyPo7lmKXb0f5xiw3oLfW9gcnP2xoCJzXiM5+/sdjJkJpkgrFEH
+N+bBgd6rwMyN65y1E0v5eRH00+0/n7f4JMx0Lk/yIp5nofzv+ZF5XUe4TibU
+8Xe8otUHMYnqHZA8eVDddKRpH5T1RaYx3xqkn0sINsbvgYFwdqOLeRN9qjH/
+8Rlzi/uSEcv8CdyXWN8pivDzCCx6C31vwod19yf8JvbzJdyi+o3SB0KHGtZ3
+lAfjGO+V7Ocy9lUJ+0qHnaRvAe9FPvxJ31zJSw7pm4W97JtC0vew9M9c0vcQ
+65sBE+m7n/G0WEz6pjPuPu7bTxH4M5SULt/ULl9bvr7Lfd3GHrrfgzHWDqw0
+Mx/XoO9RLzlbc0XOfyQ0IwbRZyHq1MM1p/XdsNt1fK5G5oPwlR5RH4UE+TxX
+jnKqU4qEDSum7qgq5npFCFSv0K21LcRhqnsCbjVBPqEvH+d+crHVki+Ek4XW
+N77RDaR+D0fCO4r3XnhSf3TjYTzN/Ih5FvF8Hsq/rLO4tlbsyFd3YMm1DvLJ
+73zdyTy3wZ59706+u8L7cBGl5LNzfM6EGPaB4KsWFeRnI55iHpLIz3quVyHz
+wp33RPi5GCPsDw35uVDuTSf7xLI/XuTnHPbzMYGbEKyQrxPnKNEUWNMUGifR
+TonQ1A3PiXiITXR/WOotnt/CE7u1O/JWd+F9eq8DRne/C819v0FF7/+KmS2D
+99al/iLzf8FfBes9zef4fAPe9J48eLn0DKZTndOYbvYcOPVhLVZRPaPMyWqq
+q4cq48sAVXkFRJ8/Iirb2jDesQyzCKcE+kDHAtsFxTJPnx3686v6pkK8Qrgn
+Wae3FcseC91d+XqqIvbSRnHnvX6N+B6Scws+e/l7dBOptGdm9k8bWmmvrvE+
+NaGD9ujR/GJ/z3M+N3I+18s8yKb9rZO5UED7Wy15EN+jKlyvFjkh8rmc87kM
+S2h/Sxm3ROAiVOip+HBueYh5FSdl4J1Kt+R+e75vrXw7uhWD0fdFzilD0ud/
+0Hu98Gwf66xb+j3Fb3mFrqAd4lwLJrDvBV4T1OuXjynM36dR/b/YolpTeZ7r
+NbIvTZhNdc/AY+l3k9YfPC33IbHTlHFqfw00hPOIB4FXhSIH/7cmHK+EHe+H
+0Cmc5/HlvJrN+joLHkZ11nCOidyx4vv3OGf+kXPnUa70cV71wIVypBPTOOcs
+ulvyTuTVVVRw7om8usx9XcQiyqsLyOIcdKe8apB5aMkDSy6KvKplvBrOq2qZ
+k/8DWSWguw==
+          "]}, {Automatic, Automatic}], $CellContext`a[LogNormalDistribution] = I\
+nterpolatingFunction[{{0.1, 1.}, {0.1, 3.0000000000000004`}}, {
+         4, 7, 0, {10, 30}, {4, 4}, 0, 0, 0, 0, Automatic}, {{0.1, 0.2, 
+          0.30000000000000004`, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9, 
+          1.}, {0.1, 0.2, 0.30000000000000004`, 0.4, 0.5, 0.6, 
+          0.7000000000000001, 0.8, 0.9, 1., 1.1, 1.2000000000000002`, 
+          1.3000000000000003`, 1.4000000000000001`, 1.5000000000000002`, 1.6, 
+          1.7000000000000002`, 1.8000000000000003`, 1.9000000000000001`, 2., 
+          2.1, 2.2, 2.3000000000000003`, 2.4000000000000004`, 
+          2.5000000000000004`, 2.6, 2.7, 2.8000000000000003`, 
+          2.9000000000000004`, 3.0000000000000004`}}, {
+         Developer`PackedArrayForm, CompressedData["
+1:eJwV02O4EAYYBeCbXTe7273Ztpe9jFXLtrW2tLBlu5bdlpaXbdu2XXvv9zzv
+OX/Pny+4aafqHcMEBARkCQ0XWmEJR3giEJFIRCYKUYlGdGIQk1gEEps4xCUe
+8UlAQhKRmCQkJRnJSUEQKQkmhFSkJg1pSUd6MpCRTGQO3U1WspGdHOQkF7nJ
+Q17ykZ8CFKQQhSlCUYpRnBL8QElKUZoylKUc5alARSpRmSpU5UeqUZ0a1KQW
+talDXepRn59oQEMa8TONaUJTmtGcFrSkFa1pQ1va0Z4OdKQTnelCV7rRnR70
+pBe96UNf+tGfXxjAr/zGQAYxmCEM5XeGMZwRjOQP/mQUoxnDWMYxnglMZBKT
+mcJUpjGdGcxkFrOZw1zm8RfzWcBCFrGYJSxlGctZwUpWsZo1/M0/rGUd69nA
+Rv5lE5vZwla2sZ0d/MdOdrGbPexlH/s5wEEOcZgjHOUYxznBSU5xmjOc5Rzn
+ucBFLnGZK1zlGte5wU1ucZs73OUe93nAQx7xmCc85RnPecFLXvGaN7zlHe/5
+wEc+8ZkvfOUb3wl9/jCEJRzhiUBEIhGZKEQlGtGJQUxiEUhs4hCXeMQnAQlJ
+RGKSkJRkJCcFQaQkmBBSkZo0pCUd6clARjKRmf8BStGFbQ==
+          "], CompressedData["
+1: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
++B9seQfW
+          "]}, {Automatic, Automatic}], $CellContext`a[WeibullDistribution] = 
+       InterpolatingFunction[{{0.1, 1.}, {0.1, 3.0000000000000004`}}, {
+         4, 7, 0, {10, 30}, {4, 4}, 0, 0, 0, 0, Automatic}, {{0.1, 0.2, 
+          0.30000000000000004`, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9, 
+          1.}, {0.1, 0.2, 0.30000000000000004`, 0.4, 0.5, 0.6, 
+          0.7000000000000001, 0.8, 0.9, 1., 1.1, 1.2000000000000002`, 
+          1.3000000000000003`, 1.4000000000000001`, 1.5000000000000002`, 1.6, 
+          1.7000000000000002`, 1.8000000000000003`, 1.9000000000000001`, 2., 
+          2.1, 2.2, 2.3000000000000003`, 2.4000000000000004`, 
+          2.5000000000000004`, 2.6, 2.7, 2.8000000000000003`, 
+          2.9000000000000004`, 3.0000000000000004`}}, {
+         Developer`PackedArrayForm, CompressedData["
+1:eJwV02O4EAYYBeCbXTe7273Ztpe9jFXLtrW2tLBlu5bdlpaXbdu2XXvv9zzv
+OX/Pny+4aafqHcMEBARkCQ0XWmEJR3giEJFIRCYKUYlGdGIQk1gEEps4xCUe
+8UlAQhKRmCQkJRnJSUEQKQkmhFSkJg1pSUd6MpCRTGQO3U1WspGdHOQkF7nJ
+Q17ykZ8CFKQQhSlCUYpRnBL8QElKUZoylKUc5alARSpRmSpU5UeqUZ0a1KQW
+talDXepRn59oQEMa8TONaUJTmtGcFrSkFa1pQ1va0Z4OdKQTnelCV7rRnR70
+pBe96UNf+tGfXxjAr/zGQAYxmCEM5XeGMZwRjOQP/mQUoxnDWMYxnglMZBKT
+mcJUpjGdGcxkFrOZw1zm8RfzWcBCFrGYJSxlGctZwUpWsZo1/M0/rGUd69nA
+Rv5lE5vZwla2sZ0d/MdOdrGbPexlH/s5wEEOcZgjHOUYxznBSU5xmjOc5Rzn
+ucBFLnGZK1zlGte5wU1ucZs73OUe93nAQx7xmCc85RnPecFLXvGaN7zlHe/5
+wEc+8ZkvfOUb3wl9/jCEJRzhiUBEIhGZKEQlGtGJQUxiEUhs4hCXeMQnAQlJ
+RGKSkJRkJCcFQaQkmBBSkZo0pCUd6clARjKRmf8BStGFbQ==
+          "], CompressedData["
+1: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
+5hmfhw==
+          "]}, {Automatic, Automatic}], $CellContext`b[GammaDistribution] = 
+       InterpolatingFunction[{{0.1, 1.}, {0.1, 3.0000000000000004`}}, {
+         4, 7, 0, {10, 30}, {4, 4}, 0, 0, 0, 0, Automatic}, {{0.1, 0.2, 
+          0.30000000000000004`, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9, 
+          1.}, {0.1, 0.2, 0.30000000000000004`, 0.4, 0.5, 0.6, 
+          0.7000000000000001, 0.8, 0.9, 1., 1.1, 1.2000000000000002`, 
+          1.3000000000000003`, 1.4000000000000001`, 1.5000000000000002`, 1.6, 
+          1.7000000000000002`, 1.8000000000000003`, 1.9000000000000001`, 2., 
+          2.1, 2.2, 2.3000000000000003`, 2.4000000000000004`, 
+          2.5000000000000004`, 2.6, 2.7, 2.8000000000000003`, 
+          2.9000000000000004`, 3.0000000000000004`}}, {
+         Developer`PackedArrayForm, CompressedData["
+1:eJwV02O4EAYYBeCbXTe7273Ztpe9jFXLtrW2tLBlu5bdlpaXbdu2XXvv9zzv
+OX/Pny+4aafqHcMEBARkCQ0XWmEJR3giEJFIRCYKUYlGdGIQk1gEEps4xCUe
+8UlAQhKRmCQkJRnJSUEQKQkmhFSkJg1pSUd6MpCRTGQO3U1WspGdHOQkF7nJ
+Q17ykZ8CFKQQhSlCUYpRnBL8QElKUZoylKUc5alARSpRmSpU5UeqUZ0a1KQW
+talDXepRn59oQEMa8TONaUJTmtGcFrSkFa1pQ1va0Z4OdKQTnelCV7rRnR70
+pBe96UNf+tGfXxjAr/zGQAYxmCEM5XeGMZwRjOQP/mQUoxnDWMYxnglMZBKT
+mcJUpjGdGcxkFrOZw1zm8RfzWcBCFrGYJSxlGctZwUpWsZo1/M0/rGUd69nA
+Rv5lE5vZwla2sZ0d/MdOdrGbPexlH/s5wEEOcZgjHOUYxznBSU5xmjOc5Rzn
+ucBFLnGZK1zlGte5wU1ucZs73OUe93nAQx7xmCc85RnPecFLXvGaN7zlHe/5
+wEc+8ZkvfOUb3wl9/jCEJRzhiUBEIhGZKEQlGtGJQUxiEUhs4hCXeMQnAQlJ
+RGKSkJRkJCcFQaQkmBBSkZo0pCUd6clARjKRmf8BStGFbQ==
+          "], CompressedData["
+1:eJw9VX1M1WUUvghcBK504cLlGy5coAuCXLnKgKzzSGituYU4XRtUrCXZplNj
+9ofVYpiVa661tRp9bJauSV+zrSG2/gh1MTdIWRSWbclwNFGXhlRqk/id8/B7
+x3jv+55znvOe933O8yt5amfb1jiPx1O98O+9PmeckPd1/kXOjTjjqryr61vi
+0ZGAUd33wfwCsLhcxHSEYH5lWK3rCAynGs90LYzpKONiWOK49dTjA103Ypva
+1zAOlsfXTLwWWNr1zPMw6p2p+xHib0C844ZHsVVxWmGwbTzfJjzr7Hs3M+8W
+nqOf9Z6RHxTnN3lH15dZ703R7ZH/xHDiGZeMVXoOP+7OOyPAc+XgrPoXWL7p
+EPOHmbeC9Vay3mriRKH5fXXEi7HeetobWG8T738N4rReQZfiwPI0NvN8D7Le
+dXYvPevhT3fGR5Km85DYeX+UVF1PytFPnTEjK3V/Vkp13BY1p8exjkT0q18K
+ytTuZ90BHHjdGUHu50HLmC+ExZdgXYszwsQp53ki+EzxqowfXTUIa3zU5o9X
+kg8xbNm8MH5ahdc0T73dz4YG2DmboNtLeS+eB+z9+/r4vifI5xGX3/a+l+Qk
+eW7us3znW7wHDxZ5b+dYSr75+H5+tw+03JeDXOfSXuD2hfG5lPcS5rqC9oi9
+c3eV2y+J+r61fN8o37eO/IkZvne120cvZH750OTet+VFnb8W38ThXfenDMtL
+uh4Xu5eLkqr7f8iTb56ci3T8Sf+bMrNxsGj/lcU+9+AJtcfDcJJgcancv8fy
+ejKwV+MzEdp/ZQEhG9cUJxdTaijg/YXgRE8cLmF8GFUdzo9y4t5LvEqk6Ho5
+7TXoVP9abHJgx6J83zpkKH/eEpu/Eu2P2CnydUw+V179Sp5PifFyhv43yIM5
++t2m3WN9FovHQSWUl3xOQYLmTWPedCidWwL4UHGyENDtHBhenulQVyH5HCKf
+S9jPYTymfC5j31SQzxH6V+EN5XM1612B4vG1heNrD0qhzl/IxqQ9rUl7vpMi
+XY/K4I4LAzsu/Cytun9RthlxaL8mTUf3Lfz9JQPq97f06sYdaVN/D5KdqTUe
+T2ucFzsdt4FkWL5luE/j/WjQOQP+mUNpM4cyYXmD5HEu9iluPtStqQh2zhCO
+q18JdNkaRrMCl7HvK6DbSRHs0ryV1IkD7Mt+6vO3XJ8hT8flNHXb+mKK82Wp
+0/Ncd3Xc3vVfOUs9t/70sF/j7Z57vK6+m93n6rz1awb5nGk67wtSF3Js7s6j
+PhcYn1HM7x6/A42l7vdA973lzFuBnO1Dwe1Dr0q2zp+4uhXU9ffyXMHw7oLh
+MVe/TqlhkvZpGaWO7Va/G1J7vrfmfO+cq2ffdKYOdKbeZVycfRcWdM3yeeFt
+P5bYfiyZ3y8fBtTfD8NL57kDWKG4WYjqnO3q3fPql49BjStydW9I85UQv5R9
+XgbTnVfEdOuILNO+Py6mJ6f5bufE9GCCevU7/S+J6czid/q6tKt9lrr3D/Hu
+iMpIxzz1bwnzJlCvknBVcZKpVz6+rx9HVK/S8bjGB1CpQFnUw2zeXy71Kx/L
+1V5I/2LqVYj1luJ/oLuWZQ==
+          "]}, {Automatic, Automatic}], $CellContext`b[LogNormalDistribution] = 
+       InterpolatingFunction[{{0.1, 1.}, {0.1, 3.0000000000000004`}}, {
+         4, 7, 0, {10, 30}, {4, 4}, 0, 0, 0, 0, Automatic}, {{0.1, 0.2, 
+          0.30000000000000004`, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9, 
+          1.}, {0.1, 0.2, 0.30000000000000004`, 0.4, 0.5, 0.6, 
+          0.7000000000000001, 0.8, 0.9, 1., 1.1, 1.2000000000000002`, 
+          1.3000000000000003`, 1.4000000000000001`, 1.5000000000000002`, 1.6, 
+          1.7000000000000002`, 1.8000000000000003`, 1.9000000000000001`, 2., 
+          2.1, 2.2, 2.3000000000000003`, 2.4000000000000004`, 
+          2.5000000000000004`, 2.6, 2.7, 2.8000000000000003`, 
+          2.9000000000000004`, 3.0000000000000004`}}, {
+         Developer`PackedArrayForm, CompressedData["
+1:eJwV02O4EAYYBeCbXTe7273Ztpe9jFXLtrW2tLBlu5bdlpaXbdu2XXvv9zzv
+OX/Pny+4aafqHcMEBARkCQ0XWmEJR3giEJFIRCYKUYlGdGIQk1gEEps4xCUe
+8UlAQhKRmCQkJRnJSUEQKQkmhFSkJg1pSUd6MpCRTGQO3U1WspGdHOQkF7nJ
+Q17ykZ8CFKQQhSlCUYpRnBL8QElKUZoylKUc5alARSpRmSpU5UeqUZ0a1KQW
+talDXepRn59oQEMa8TONaUJTmtGcFrSkFa1pQ1va0Z4OdKQTnelCV7rRnR70
+pBe96UNf+tGfXxjAr/zGQAYxmCEM5XeGMZwRjOQP/mQUoxnDWMYxnglMZBKT
+mcJUpjGdGcxkFrOZw1zm8RfzWcBCFrGYJSxlGctZwUpWsZo1/M0/rGUd69nA
+Rv5lE5vZwla2sZ0d/MdOdrGbPexlH/s5wEEOcZgjHOUYxznBSU5xmjOc5Rzn
+ucBFLnGZK1zlGte5wU1ucZs73OUe93nAQx7xmCc85RnPecFLXvGaN7zlHe/5
+wEc+8ZkvfOUb3wl9/jCEJRzhiUBEIhGZKEQlGtGJQUxiEUhs4hCXeMQnAQlJ
+RGKSkJRkJCcFQaQkmBBSkZo0pCUd6clARjKRmf8BStGFbQ==
+          "], CompressedData["
+1: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
+          "]}, {Automatic, Automatic}], $CellContext`b[WeibullDistribution] = 
+       InterpolatingFunction[{{0.1, 1.}, {0.1, 3.0000000000000004`}}, {
+         4, 7, 0, {10, 30}, {4, 4}, 0, 0, 0, 0, Automatic}, {{0.1, 0.2, 
+          0.30000000000000004`, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9, 
+          1.}, {0.1, 0.2, 0.30000000000000004`, 0.4, 0.5, 0.6, 
+          0.7000000000000001, 0.8, 0.9, 1., 1.1, 1.2000000000000002`, 
+          1.3000000000000003`, 1.4000000000000001`, 1.5000000000000002`, 1.6, 
+          1.7000000000000002`, 1.8000000000000003`, 1.9000000000000001`, 2., 
+          2.1, 2.2, 2.3000000000000003`, 2.4000000000000004`, 
+          2.5000000000000004`, 2.6, 2.7, 2.8000000000000003`, 
+          2.9000000000000004`, 3.0000000000000004`}}, {
+         Developer`PackedArrayForm, CompressedData["
+1:eJwV02O4EAYYBeCbXTe7273Ztpe9jFXLtrW2tLBlu5bdlpaXbdu2XXvv9zzv
+OX/Pny+4aafqHcMEBARkCQ0XWmEJR3giEJFIRCYKUYlGdGIQk1gEEps4xCUe
+8UlAQhKRmCQkJRnJSUEQKQkmhFSkJg1pSUd6MpCRTGQO3U1WspGdHOQkF7nJ
+Q17ykZ8CFKQQhSlCUYpRnBL8QElKUZoylKUc5alARSpRmSpU5UeqUZ0a1KQW
+talDXepRn59oQEMa8TONaUJTmtGcFrSkFa1pQ1va0Z4OdKQTnelCV7rRnR70
+pBe96UNf+tGfXxjAr/zGQAYxmCEM5XeGMZwRjOQP/mQUoxnDWMYxnglMZBKT
+mcJUpjGdGcxkFrOZw1zm8RfzWcBCFrGYJSxlGctZwUpWsZo1/M0/rGUd69nA
+Rv5lE5vZwla2sZ0d/MdOdrGbPexlH/s5wEEOcZgjHOUYxznBSU5xmjOc5Rzn
+ucBFLnGZK1zlGte5wU1ucZs73OUe93nAQx7xmCc85RnPecFLXvGaN7zlHe/5
+wEc+8ZkvfOUb3wl9/jCEJRzhiUBEIhGZKEQlGtGJQUxiEUhs4hCXeMQnAQlJ
+RGKSkJRkJCcFQaQkmBBSkZo0pCUd6clARjKRmf8BStGFbQ==
+          "], CompressedData["
+1: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
+gU83lMlq53SSjv8DdHSQug==
+          "]}, {Automatic, Automatic}], $CellContext`loanHistoryList[
+         Pattern[$CellContext`events, 
+          Blank[]], 
+         Pattern[$CellContext`creditMarketHistory, 
+          Blank[]], 
+         Pattern[$CellContext`opts, 
+          
+          OptionsPattern[{
+           "InterestRateFunction" -> 
+            Function[{$CellContext`el, $CellContext`cm, $CellContext`nb, \
+$CellContext`am}, $CellContext`cm + 
+              0.0001 ($CellContext`nb + If[Length[$CellContext`el] > 0, 
+                  Total[
+                   Map[First, $CellContext`el]], 0])], "AmortizationFunction" -> 
+            Function[{$CellContext`el, $CellContext`nb}, 
+              Min[30, 
+               Round[10 + 5 $CellContext`nb, 5]]], 
+            "SowFunction" -> (Part[#2, 1]& )}]]] := Reap[
+         FoldList[$CellContext`loanEvolve[#, 
+           Part[#2, 1], 
+           Part[#2, 2], 
+           OptionValue["InterestRateFunction"], 
+           OptionValue["AmortizationFunction"]]& , {}, 
+          Thread[{$CellContext`creditMarketHistory, $CellContext`events}]], 
+         Blank[], 
+         OptionValue["SowFunction"]], $CellContext`loanEvolve[{}, 
+         Pattern[$CellContext`newLoan, 
+          $CellContext`loan[
+           Pattern[$CellContext`newBorrowing, 
+            Blank[]], 
+           Pattern[$CellContext`r, 
+            Blank[]], 
+           Pattern[$CellContext`\[Tau], 
+            Blank[]]]]] := {$CellContext`newLoan}, $CellContext`loanEvolve[
+         Pattern[$CellContext`existingLoans, {
+           BlankSequence[$CellContext`loan]}], 
+         Pattern[$CellContext`newLoan, 
+          $CellContext`loan[
+           Pattern[$CellContext`newBorrowing, 
+            Blank[]], 
+           Pattern[$CellContext`r, 
+            Blank[]], 
+           Pattern[$CellContext`\[Tau], 
+            Blank[]]]]] := Append[
+         Map[$CellContext`loan[
+           $CellContext`outstandingPrincipalBalance[#, 1], 
+           Part[#, 2], 
+           Max[
+           0, Part[#, 3] - 
+            1]]& , $CellContext`existingLoans], $CellContext`newLoan], \
+$CellContext`loanEvolve[
+         Pattern[$CellContext`existingLoans, 
+          Blank[List]], 
+         Pattern[$CellContext`creditMarket, 
+          Blank[]], 
+         Pattern[$CellContext`newBorrowing, 
+          Blank[]], 
+         Pattern[$CellContext`interestRateFunction, 
+          Blank[]], 
+         Pattern[$CellContext`amortizationFunction, 
+          Blank[]]] := $CellContext`loanEvolve[$CellContext`existingLoans, 
+         Sow[
+          $CellContext`loan[$CellContext`newBorrowing, 
+           $CellContext`interestRateFunction[$CellContext`existingLoans, \
+$CellContext`creditMarket, $CellContext`newBorrowing, 
+            $CellContext`amortizationFunction[$CellContext`existingLoans, \
+$CellContext`newBorrowing]], 
+           $CellContext`amortizationFunction[$CellContext`existingLoans, \
+$CellContext`newBorrowing]], 1 + Count[$CellContext`existingLoans, 
+            $CellContext`loan[
+             Blank[], 
+             Blank[], 
+             Blank[]]]]], $CellContext`outstandingPrincipalBalance[
+         $CellContext`loan[
+          Pattern[$CellContext`p0, 
+           Blank[]], 
+          Pattern[$CellContext`r, 
+           Blank[]], 
+          PatternTest[
+           Pattern[$CellContext`\[Tau], 
+            Blank[]], # > 0& ]], 
+         Pattern[$CellContext`t, 
+          Blank[]]] = ((-E^($CellContext`r $CellContext`t) + 
+          E^($CellContext`r $CellContext`\[Tau])) $CellContext`p0)/(-1 + 
+        E^($CellContext`r $CellContext`\[Tau])), \
+$CellContext`outstandingPrincipalBalance[
+         $CellContext`loan[
+          Pattern[$CellContext`p0, 
+           Blank[]], 
+          Pattern[$CellContext`r, 
+           Blank[]], 
+          PatternTest[
+           Pattern[$CellContext`\[Tau], 
+            Blank[]], # <= 0& ]], 
+         Pattern[$CellContext`t, 
+          
+          Blank[]]] := $CellContext`p0, \
+$CellContext`defaultAmortizationPeriodFunction = 
+       Function[{$CellContext`el, $CellContext`nb}, 
+         Min[30, 
+          Round[
+          10 + 5 $CellContext`nb, 
+           5]]], $CellContext`historyToOutstandingPrincipalBalance[
+         Pattern[$CellContext`history, 
+          Blank[]]] := Map[Total[
+          ReplaceAll[
+           Cases[#, $CellContext`loan[
+              PatternTest[
+               Pattern[$CellContext`pb, 
+                Blank[]], NumericQ], 
+              PatternTest[
+               Blank[], NumericQ], 
+              PatternTest[
+               Blank[], NumericQ]] :> $CellContext`pb], {} -> {
+            0}]]& , $CellContext`history], $CellContext`totalPayments[
+         Pattern[$CellContext`lh2, 
+          Blank[]]] := 
+       With[{$CellContext`maxLength = Length[$CellContext`lh2] + Max[
+             Map[Part[#, 2, 3]& , $CellContext`lh2]]}, 
+         Map[Total, 
+          Transpose[
+           Map[$CellContext`paymentTable[
+             Part[#, 2], "start" -> Part[#, 1], 
+             "length" -> $CellContext`maxLength]& , $CellContext`lh2]]]], \
+$CellContext`paymentTable[
+         Pattern[$CellContext`\[ScriptL], 
+          $CellContext`loan[
+           Pattern[$CellContext`p0, 
+            Blank[]], 
+           Pattern[$CellContext`r, 
+            Blank[]], 
+           Pattern[$CellContext`t, 
+            Blank[Integer]]]], 
+         Pattern[$CellContext`opts, 
+          OptionsPattern[{"start" -> 1, "length" -> 100}]]] := Join[
+         Table[0, {OptionValue["start"] - 1}], 
+         Table[
+          $CellContext`payment[$CellContext`\[ScriptL]], {$CellContext`t}], 
+         Table[
+         0, {OptionValue["length"] - ($CellContext`t - 1 + 
+           OptionValue["start"])}]], $CellContext`payment[
+         $CellContext`loan[
+          Pattern[$CellContext`p0, 
+           Blank[]], 
+          Pattern[$CellContext`r, 
+           Blank[]], 
+          Pattern[$CellContext`t, 
+           Blank[]]]] = (
+         E^($CellContext`r $CellContext`t) $CellContext`p0 \
+$CellContext`r)/(-1 + 
+        E^($CellContext`r $CellContext`t)), $CellContext`constantDecorations1 = \
+{Joined -> True, PlotRange -> All, ImageSize -> 390, AspectRatio -> 0.21, 
+         Axes -> False, Frame -> True, FrameStyle -> GrayLevel[0.28], 
+         GridLines -> {Automatic, None}, ImagePadding -> {{30, 1}, {All, 12}},
+          BaseStyle -> {
+          FontFamily -> "Arial", FontSize -> 9, FontColor -> 
+           GrayLevel[0.28]}}, $CellContext`constantDecorations2 = {
+        Joined -> True, PlotRange -> All, ImageSize -> 390, AspectRatio -> 
+         0.21, Axes -> False, Frame -> True, FrameStyle -> GrayLevel[0.28], 
+         ImagePadding -> {{30, 1}, {All, 8}}, GridLines -> Automatic, 
+         BaseStyle -> {
+          FontFamily -> "Arial", FontSize -> 9, FontColor -> 
+           GrayLevel[0.28]}}, $CellContext`statisticalVisualization[
+         Pattern[$CellContext`events, 
+          Blank[]], 
+         Pattern[$CellContext`totals, 
+          Blank[]], 
+         Pattern[$CellContext`opb, 
+          Blank[]], 
+         Pattern[$CellContext`creditMarketHistory, 
+          Blank[]], 
+         Pattern[$CellContext`br, 
+          Blank[]]] := 
+       With[{$CellContext`so = $CellContext`statOuter[{$CellContext`events, \
+$CellContext`totals, $CellContext`totals/
+             Mean[$CellContext`events], $CellContext`opb, $CellContext`br, \
+$CellContext`br - $CellContext`creditMarketHistory}]}, 
+         Grid[
+          Join[{{"", "mean", "standard\ndeviation", "minimum", "maximum"}}, 
+           MapThread[Prepend, {
+             Map[NumberForm[
+               Chop[#, 1.*^-6], 3]& , $CellContext`so, {2}], {
+              Tooltip[
+              "loss", "the total losses suffered by the members of the pool \
+each year; determined by the parameters of the loss distribution you select"], 
+              Tooltip[
+              "debt service", 
+               "the annual payments made each year to amortize all the \
+post-event bonds issued thus far"], 
+              Tooltip[
+              "\!\(\*FractionBox[\(debt\\ service\), \(mean\\ loss\)]\)", 
+               "the ratio between the annual debt service and the mean \
+losses"], 
+              Tooltip[
+              "debt load", 
+               "the aggregate outstanding principal balance on all post-event \
+bonds issued thus far"], 
+              Tooltip[
+              "borrowing rate", 
+               "the interest rate on post-event bonds; this figure will \
+depend in part on generally prevailing interest rates in the credit markets \
+at the time each bond is issued and in part on the sensitivity of the credit \
+markets to the amount of the borrower's outstanding principal balance at the \
+time the bond is issued"], 
+              Tooltip[
+              "borrowing premium", 
+               "the difference between the interest rate the bond issuer pays \
+and the generally prevailing interest rate in the credit market"]}}]], Frame -> 
+          All, FrameStyle -> GrayLevel[0.28], 
+          ItemSize -> {{8, 6, 6, 6, 6, 6}, 1.25}, Background -> {{
+             RGBColor[{0.88, 0.94, 0.95}], {None}}, {
+             RGBColor[{0.92, 0.96, 0.98}], {None}}}, 
+          BaseStyle -> {
+           FontFamily -> "Arial", FontSize -> 10, FontColor -> 
+            GrayLevel[0.28]}]], $CellContext`statOuter[
+         Pattern[$CellContext`data, 
+          Blank[]]] := 
+       Outer[#2[#]& , $CellContext`data, {Mean, StandardDeviation, Min, Max}, 
+         1, 1]}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "PluginEmbeddedContent"]
+},
+WindowSize->{459, 463},
+WindowMargins->Automatic,
+WindowElements->{},
+WindowFrameElements->{"CloseBox"},
+WindowTitle->"CDF Plugin Example - State Committee Testimony",
+PrivateNotebookOptions->{"PluginToolbarEnabled"->False},
+ShowCellBracket->False,
+ShowSelection->False,
+Deployed->True,
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[610, 21, 55373, 1026, 463, "PluginEmbeddedContent"]
+}
+]
+*)
+
+(* End of internal cache information *)
+(* NotebookSignature EKNOiLLWtlfBTI5tUCtW8OQd *)
