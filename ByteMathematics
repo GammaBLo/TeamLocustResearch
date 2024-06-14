@@ -1,0 +1,124 @@
+import tkinter as tk
+import math
+import heapq
+
+from collections import Counter
+
+class Node:
+    def __init__(self, data=None):
+        self.data = data
+        self.left = None
+        self.right = None
+
+def huffman_encoding_inverted_math(data):
+    # Count the frequency of each character in the data
+    freq_dict = dict(Counter(data))
+    freq_list = [(char, freq) for char, freq in freq_dict.items()]
+
+    # Construct a priority queue of nodes, sorted by frequency
+    nodes = []
+    for item in freq_list:
+        nodes.append((item[1], Node(item[0])))
+    heapq.heapify(nodes)
+
+    # Combine nodes with the smallest frequency until only one node remains
+    while len(nodes) > 1:
+        left_node = heapq.heappop(nodes)
+        right_node = heapq.heappop(nodes)
+        combined_node = Node(left_node[1].data + right_node[1].data)
+        combined_node.left = left_node[1]
+        combined_node.right = right_node[1]
+        heapq.heappush(nodes, (left_node[0] + right_node[0], combined_node))
+
+    # Traverse the tree to generate codes for each character
+    codes = {}
+    root = nodes[0][1]
+    traverse_tree(root, "", codes)
+
+    # Encode the data using the generated codes and Inverted Math
+    encoded_data = ""
+    for char in data:
+        encoded_data += codes[char]
+    compressed_data = compress(encoded_data)
+
+    return compressed_data, codes
+
+def traverse_tree(node, code, codes):
+    if node is None:
+        return
+    if node.data is not None:
+        codes[node.data] = code
+    traverse_tree(node.left, code + "0", codes)
+    traverse_tree(node.right, code + "1", codes)
+
+def compress(data):
+    # Break data into individual bytes
+    bytes = [int(byte) for byte in data]
+
+    # Convert each byte to our non-standard math system
+    numbers = []
+    for byte in bytes:
+        number = ""
+        for i in range(7):
+            if byte % 2 == 0:
+                number = "0" + number
+            else:
+                number = "1" + number
+            byte = byte // 2
+        numbers.append(number)
+
+    # Convert each number to decimal and add them up using inverted math
+    decimal_sum = sum([(2**21 - 1) - int(number, 2) for number in numbers])
+
+    # Reduce the decimal sum modulo 17
+    reduced_sum = decimal_sum % 17
+
+    # Convert the reduced sum back to our non-standard math system
+    compressed_number = ""
+    for i in range(3):
+        if reduced_sum % 2 == 0:
+            compressed_number = "0" + compressed_number
+        else:
+            compressed_number = "1" + compressed_number
+        reduced_sum = reduced_sum // 2
+    return compressed_number
+
+class PiCalculatorGUI(tk.Tk):
+    def __init__(self):
+        super().__init__()
+
+        # Set up the GUI
+        self.title("Pi Calculator")
+        self.geometry("500x300")
+
+        # Create the equation label
+        self.equation_label = tk.Label(self, text="Pi = √(6 · (rowofM - 1))", font=("Arial", 16))
+        self.equation_label.pack(pady=10)
+
+        # Create the rowofM entry box and label
+        self.rowofM_label = tk.Label(self, text="rowofM:")
+        self.rowofM_label.pack(pady=5)
+        self.rowofM_entry = tk.Entry(self, width=10)
+        self.rowofM_entry.pack()
+
+        # Create the math system radio buttons
+        self.math_system_label = tk.Label(self, text="Select a math system:")
+        self.math_system_label.pack(pady=5)
+
+        self.math_system_var = tk.StringVar(value="Standard Math")
+
+        self.standard_math_radio = tk.Radiobutton(self, text="Standard Math", variable=self.math_system_var, value="Standard Math")
+        self.binary_math_radio = tk.Radiobutton(self, text="Binary (Mirror) Math", variable=self.math_system_var, value="Binary (Mirror) Math")
+        self.inverse_math_radio = tk.Radiobutton(self, text="Inverse Math and Mirrors", variable=self.math_system_var, value="Inverse Math and Mirrors")
+
+        self.standard_math_radio.pack()
+        self.binary_math_radio.pack()
+        self.inverse_math_radio.pack()
+
+        # Create the calculate button
+        self.calculate_button = tk.Button(self, text="Calculate Pi", command=self.calculate_pi)
+        self.calculate_button.pack(pady=10)
+
+        # Create the result label
+        self.result_label = tk.Label(self, text="", font=("Arial", 16))
+        self.result_label.pack(pady=10)
