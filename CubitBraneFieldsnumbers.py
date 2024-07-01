@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 
-pi = calculate_pi_using_CBFs(100000)
+pi = calculate_pi_using_CubitBraneFields(100000)
 x = 1
 y = 2
 z = 3
@@ -22,7 +22,7 @@ plt.xlabel('Time (t)')
 plt.ylabel('f(x, y, z)')
 plt.title('Plot of f(x, y, z) over time')
 
-def calculate_pi_using_CBFs(n):
+def calculate_pi_using_Cubit_Brane_Fields(n):
     """Calculates the value of pi using CBFs.
 
     Args:
@@ -38,20 +38,20 @@ def calculate_pi_using_CBFs(n):
 
     return sum
 
-def CBF(n):
+def CubitBraneFields(n):
     """Returns the CBF number for the given index.
 
     Args:
         n: The index of the CBF number.
 
     Returns:
-        The CBF number for the given index.
+        The number for the given index.
     """
 
     return alpha * phi * π * psi * (1 + n)
 
 def main():
-    """Calculates the value of pi using CBFs and prints the results."""
+    """Calculates the value of pi and prints the results."""
 
     
     print("The value of pi is:", pi)
